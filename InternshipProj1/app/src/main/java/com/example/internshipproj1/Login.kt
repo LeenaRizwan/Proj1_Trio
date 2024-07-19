@@ -14,9 +14,14 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
         var login=findViewById<Button>(R.id.log)
+        var reset=findViewById<Button>(R.id.Reset)
+        var register=findViewById<Button>(R.id.Reg)
         var email=findViewById<EditText>(R.id.Email)
         var pass=findViewById<EditText>(R.id.Password)
         var mAuth=FirebaseAuth.getInstance()
+        register.setOnClickListener{
+            startActivity(Intent(this,Register::class.java))
+        }
         login.setOnClickListener{
                 mAuth.signInWithEmailAndPassword(
                     email.text.toString(),
@@ -30,6 +35,9 @@ class Login : AppCompatActivity() {
                         Log.e("Signin_Error",it.message.toString())
                         Toast.makeText(this,"Failed To SignIn", Toast.LENGTH_LONG).show()
                     }
+        }
+        reset.setOnClickListener{
+            startActivity(Intent(this,ResetPassword::class.java))
         }
 
     }
