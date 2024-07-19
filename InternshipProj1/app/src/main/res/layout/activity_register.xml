@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FFF8D6"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Register">
 
     <ImageView
         android:layout_width="match_parent"
@@ -21,7 +21,7 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/menu2"
         android:orientation="vertical"
-        tools:context=".MainActivity">
+        tools:context=".Register">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:orientation="horizontal"
-            tools:context=".MainActivity">
+            tools:context=".Register">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -58,7 +58,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:orientation="horizontal"
-            tools:context=".MainActivity">
+            tools:context=".Register">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -72,13 +72,39 @@
                 android:id="@+id/Password"
                 android:layout_height="wrap_content"></EditText>
         </androidx.appcompat.widget.LinearLayoutCompat>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Register!"
+            android:layout_marginTop="10dp"
             android:backgroundTint="#1c3748"
             android:id="@+id/Reg"
             android:layout_marginLeft="160dp"></Button>
+
+        <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="70dp"
+            tools:context=".Register">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Already have an account?"></TextView>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Login"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="#d19525"
+                android:id="@+id/Log"></Button>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 

@@ -22,11 +22,11 @@
         android:layout_marginTop="20dp"
         android:background="@drawable/menu2"
         android:orientation="vertical"
-        tools:context=".MainActivity">
+        tools:context=".Login">
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Register Now!"
+            android:text="Welcome Back!"
             android:textSize="25dp"
             android:textStyle="bold"
             android:textColor="#d19525"
@@ -38,7 +38,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:orientation="horizontal"
-            tools:context=".MainActivity">
+            tools:context=".Login">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -59,7 +59,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:orientation="horizontal"
-            tools:context=".MainActivity">
+            tools:context=".Login">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -73,6 +73,32 @@
                 android:id="@+id/Password"
                 android:layout_height="wrap_content"></EditText>
         </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginLeft="70dp"
+            tools:context=".Login">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="13dp"
+                android:textStyle="bold"
+                android:textColor="#d19525"
+                android:text="Forgot your password?"></TextView>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset Password"
+                android:textStyle="bold"
+                android:textSize="13dp"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="#d19525"
+                android:id="@+id/Reset"></Button>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -80,6 +106,30 @@
             android:backgroundTint="#1c3748"
             android:id="@+id/log"
             android:layout_marginLeft="160dp"></Button>
+
+        <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:layout_marginLeft="70dp"
+            tools:context=".Login">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text="Don't have an account?"></TextView>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:backgroundTint="#FFFFFF"
+                android:textColor="#d19525"
+                android:id="@+id/Reg"></Button>
+        </androidx.appcompat.widget.LinearLayoutCompat>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
