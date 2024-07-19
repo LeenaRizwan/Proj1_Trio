@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#FFF8D6"
     android:orientation="vertical"
-    tools:context=".MainActivity">
+    tools:context=".Login">
 
     <ImageView
         android:layout_width="match_parent"
@@ -75,12 +76,11 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Register!"
+            android:text="Login!"
             android:backgroundTint="#1c3748"
-            android:id="@+id/Reg"
+            android:id="@+id/log"
             android:layout_marginLeft="160dp"></Button>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
 
-
-    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>
