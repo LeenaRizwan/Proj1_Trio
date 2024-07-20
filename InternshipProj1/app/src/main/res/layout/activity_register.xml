@@ -14,8 +14,7 @@
         android:src="@drawable/banner"
         android:scaleType="fitXY"></ImageView>
 
-    <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:tools="http://schemas.android.com/tools"
+    <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="20dp"
@@ -41,11 +40,32 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Email:        "
+                android:text="Name:           "
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:textColor="#d19525"
-                android:layout_marginLeft="100dp"></TextView>
+                android:layout_marginLeft="80dp"></TextView>
+            <EditText
+                android:layout_width="150dp"
+                android:id="@+id/Name"
+                android:layout_height="wrap_content"></EditText>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            tools:context=".Register">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email:            "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#d19525"
+                android:layout_marginLeft="80dp"></TextView>
             <EditText
                 android:layout_width="150dp"
                 android:id="@+id/Email"
@@ -62,16 +82,63 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Password: "
+                android:text="Password:    "
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:textColor="#d19525"
-                android:layout_marginLeft="100dp"></TextView>
+                android:layout_marginLeft="80dp"></TextView>
             <EditText
                 android:layout_width="150dp"
                 android:id="@+id/Password"
                 android:layout_height="wrap_content"></EditText>
         </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            tools:context=".Register">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Birth:"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#d19525"
+                android:layout_marginLeft="80dp"></TextView>
+
+            <EditText
+                android:id="@+id/editTextDate4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:text="YYYY/MM/DD"
+                android:inputType="date"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal"
+            tools:context=".Register">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Address:         "
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#d19525"
+                android:layout_marginLeft="80dp"></TextView>
+            <EditText
+                android:layout_width="150dp"
+                android:id="@+id/Addr"
+                android:layout_height="wrap_content"></EditText>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
 
         <Button
             android:layout_width="wrap_content"

@@ -1,9 +1,193 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.appcompat.widget.LinearLayoutCompat
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FFF8D6"
+    android:orientation="vertical"
     tools:context=".ProfileHome">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:src="@drawable/banner1"
+            android:scaleType="fitXY"></ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/menu2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Name Here"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#d19525"
+                android:layout_marginLeft="120dp"></TextView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email: "
+                    android:textSize="20dp"
+                    android:id="@+id/Email"
+                    android:textStyle="bold"
+                    android:textColor="#d19525"
+                    android:layout_marginLeft="50dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password: "
+                    android:textSize="20dp"
+                    android:id="@+id/Passw"
+                    android:textStyle="bold"
+                    android:textColor="#d19525"
+                    android:layout_marginLeft="100dp"></TextView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date of Birth: "
+                    android:textSize="20dp"
+                    android:id="@+id/Gender"
+                    android:textStyle="bold"
+                    android:textColor="#d19525"
+                    android:layout_marginLeft="50dp"></TextView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Address: "
+                    android:textSize="20dp"
+                    android:id="@+id/Addr"
+                    android:textStyle="bold"
+                    android:textColor="#d19525"
+                    android:layout_marginLeft="50dp"></TextView>
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Profile!"
+                android:layout_marginTop="10dp"
+                android:backgroundTint="#1c3748"
+                android:id="@+id/EditProf"
+                android:layout_marginLeft="160dp"></Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cart: "
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#d19525"
+                android:layout_marginLeft="20dp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#e3c15b"
+                android:layout_marginLeft="50dp"
+                android:text="The cart is currently empty."></TextView>
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Go To Cart"
+                    android:layout_gravity="end"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:backgroundTint="#1c3748"
+                    android:id="@+id/GoToCart"></Button>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Purchase History: "
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#d19525"
+                android:layout_marginLeft="20dp"></TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:textColor="#e3c15b"
+                android:layout_marginLeft="50dp"
+                android:text="This list is currently empty."></TextView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Go To History"
+                android:textStyle="bold"
+                android:textSize="15dp"
+                android:layout_gravity="end"
+                android:backgroundTint="#1c3748"
+                android:id="@+id/GoToHist"></Button>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+<!--Action Bar-->
+<LinearLayout
+    android:layout_width="wrap_content"
+    android:layout_height="130dp"
+    android:gravity="bottom"
+    android:orientation="horizontal">
+    
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/HomeButton"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SearchButton"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/CartButton"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ProfileButton"></Button>
+    
+</LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

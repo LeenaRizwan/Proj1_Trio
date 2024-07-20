@@ -7,6 +7,7 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.Toast
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.FirebaseDatabase
 
 //So now we'll do Email Verification Here
 //The idea is the same as The other, except ill do it manually, and we wont make the account here
@@ -26,10 +27,12 @@ class Register : AppCompatActivity() {
         register.setOnClickListener{
             var mAuth = FirebaseAuth.getInstance()
             mAuth.createUserWithEmailAndPassword(email.text.toString(),password.text.toString()).addOnSuccessListener {
+                var db= FirebaseDatabase.getInstance()
+                
                 startActivity(Intent(this,EmailVerif::class.java))
             }
                 .addOnFailureListener{
-                    Toast.makeText(this, "Not Done", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Cannot Sign in", Toast.LENGTH_LONG).show()
 
                 }
         }
