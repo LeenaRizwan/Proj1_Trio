@@ -5,19 +5,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-//DO THE ACTION BAR
-//Do Edit Profile First
-//Cart needs a horizontal Scroll Veiw of the images and Titles of the first three products in the list
-//As does buying history, but worry abt those when we get to em
-//The pages for them themselves are just Recycler Veiw pages
-//Make sure to add ClearAll and delete indiv buttons on the xml
-class ProfileHome : AppCompatActivity() {
+class Template : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_profile_home)
-
-
-
+        setContentView(R.layout.activity_template)
 
         //ACTION BAR
         var home=findViewById<Button>(R.id.HomeButton)

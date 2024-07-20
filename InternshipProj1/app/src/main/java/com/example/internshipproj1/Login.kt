@@ -34,7 +34,7 @@ class Login : AppCompatActivity() {
                     pass.text.toString()
                 ).addOnSuccessListener {
                     if(mAuth.currentUser?.isEmailVerified()==true){
-                        Toast.makeText(this,"Is Verified! Lemme in!", Toast.LENGTH_LONG).show()
+                        startActivity(Intent(this,Home::class.java))
                     }
                     else {
                         var em = findViewById<TextView>(R.id.errormessage)
