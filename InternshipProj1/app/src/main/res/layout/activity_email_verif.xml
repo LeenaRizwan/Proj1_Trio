@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8D6"
+    android:orientation="vertical"
+    tools:context=".EmailVerif">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:src="@drawable/banner"
+                android:scaleType="fitXY"></ImageView>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/menu2"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Verify Your Email!"
+                    android:textSize="25dp"
+                    android:textStyle="bold"
+                    android:textColor="#d19525"
+                    android:layout_marginLeft="120dp"></TextView>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="16dp"
+                    android:textStyle="bold"
+                    android:textColor="#d19525"
+                    android:layout_marginLeft="20dp"
+                    android:text="Re-enter your email to receive a verification link in your email. After clicking it,you may go back to Login!"></TextView>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email:        "
+                        android:textSize="20dp"
+                        android:textStyle="bold"
+                        android:textColor="#d19525"
+                        android:layout_marginLeft="100dp"></TextView>
+                    <EditText
+                        android:layout_width="150dp"
+                        android:id="@+id/Email"
+                        android:layout_height="50dp"></EditText>
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+                <androidx.appcompat.widget.LinearLayoutCompat
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal">
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Back to Login"
+                        android:backgroundTint="#1c3748"
+                        android:id="@+id/log"
+                        android:layout_marginLeft="70dp"></Button>
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Send The Link"
+                        android:backgroundTint="#1c3748"
+                        android:layout_marginLeft="10dp"
+                        android:id="@+id/sendagain"></Button>
+
+                </androidx.appcompat.widget.LinearLayoutCompat>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
