@@ -26,7 +26,7 @@ class Register : AppCompatActivity() {
         register.setOnClickListener{
             var mAuth = FirebaseAuth.getInstance()
             mAuth.createUserWithEmailAndPassword(email.text.toString(),password.text.toString()).addOnSuccessListener {
-                Toast.makeText(this, "Done", Toast.LENGTH_LONG).show()
+                startActivity(Intent(this,EmailVerif::class.java))
             }
                 .addOnFailureListener{
                     Toast.makeText(this, "Not Done", Toast.LENGTH_LONG).show()
