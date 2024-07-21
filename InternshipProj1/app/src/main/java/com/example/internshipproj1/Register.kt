@@ -24,11 +24,22 @@ class Register : AppCompatActivity() {
         var login=findViewById<Button>(R.id.Log)
         var email=findViewById<EditText>(R.id.Email)
         var password=findViewById<EditText>(R.id.Password)
+        var name=findViewById<EditText>(R.id.Name)
+        var dob=findViewById<EditText>(R.id.editTextDate4)
+        var address=findViewById<EditText>(R.id.Addr)
         register.setOnClickListener{
             var mAuth = FirebaseAuth.getInstance()
             mAuth.createUserWithEmailAndPassword(email.text.toString(),password.text.toString()).addOnSuccessListener {
-                var db= FirebaseDatabase.getInstance()
-                
+
+                var database = FirebaseDatabase.getInstance()
+                var databaseRef = database.getReference("users")
+
+                databaseRef.child(email.text.toString().split("@")[0]).child("Email").setValue(email.text.toString())
+                databaseRef.child(email.text.toString().split("@")[0]).child("Name").setValue(name.text.toString())
+                databaseRef.child(email.text.toString().split("@")[0]).child("Password").setValue(password.text.toString())
+                databaseRef.child(email.text.toString().split("@")[0]).child("DoB").setValue(dob.text.toString())
+                databaseRef.child(email.text.toString().split("@")[0]).child("Address").setValue(address.text.toString())
+
                 startActivity(Intent(this,EmailVerif::class.java))
             }
                 .addOnFailureListener{

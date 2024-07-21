@@ -17,13 +17,13 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="600dp">
 
     <androidx.appcompat.widget.LinearLayoutCompat
             xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="600dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/menu2"
             android:orientation="vertical">
@@ -31,10 +31,11 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Name Here"
+                android:id="@+id/Welcome"
                 android:textSize="25dp"
                 android:textStyle="bold"
                 android:textColor="#d19525"
-                android:layout_marginLeft="120dp"></TextView>
+                android:layout_marginLeft="100dp"></TextView>
 
             <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
@@ -50,17 +51,27 @@
                     android:id="@+id/Email"
                     android:textStyle="bold"
                     android:textColor="#d19525"
-                    android:layout_marginLeft="50dp"></TextView>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Password: "
-                    android:textSize="20dp"
-                    android:id="@+id/Passw"
-                    android:textStyle="bold"
-                    android:textColor="#d19525"
-                    android:layout_marginLeft="100dp"></TextView>
+                    android:layout_marginLeft="40dp"></TextView>
             </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Password: "
+            android:textSize="20dp"
+            android:id="@+id/Passw"
+            android:textStyle="bold"
+            android:textColor="#d19525"
+            android:layout_marginLeft="40dp"></TextView>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
@@ -73,10 +84,10 @@
                     android:layout_height="wrap_content"
                     android:text="Date of Birth: "
                     android:textSize="20dp"
-                    android:id="@+id/Gender"
+                    android:id="@+id/DoB"
                     android:textStyle="bold"
                     android:textColor="#d19525"
-                    android:layout_marginLeft="50dp"></TextView>
+                    android:layout_marginLeft="40dp"></TextView>
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
@@ -93,7 +104,7 @@
                     android:id="@+id/Addr"
                     android:textStyle="bold"
                     android:textColor="#d19525"
-                    android:layout_marginLeft="50dp"></TextView>
+                    android:layout_marginLeft="40dp"></TextView>
             </androidx.appcompat.widget.LinearLayoutCompat>
 
             <Button
@@ -103,7 +114,7 @@
                 android:layout_marginTop="10dp"
                 android:backgroundTint="#1c3748"
                 android:id="@+id/EditProf"
-                android:layout_marginLeft="160dp"></Button>
+                android:layout_gravity="end"></Button>
 
             <TextView
                 android:layout_width="wrap_content"
@@ -112,6 +123,7 @@
                 android:textSize="25dp"
                 android:textStyle="bold"
                 android:textColor="#d19525"
+                android:layout_marginTop="100dp"
                 android:layout_marginLeft="20dp"></TextView>
             <TextView
                 android:layout_width="wrap_content"
@@ -139,6 +151,7 @@
                 android:text="Purchase History: "
                 android:textSize="25dp"
                 android:textStyle="bold"
+                android:layout_marginTop="100dp"
                 android:textColor="#d19525"
                 android:layout_marginLeft="20dp"></TextView>
             <TextView
@@ -167,7 +180,7 @@
 <!--Action Bar-->
 <LinearLayout
     android:layout_width="wrap_content"
-    android:layout_height="130dp"
+    android:layout_height="50dp"
     android:gravity="bottom"
     android:orientation="horizontal">
     
