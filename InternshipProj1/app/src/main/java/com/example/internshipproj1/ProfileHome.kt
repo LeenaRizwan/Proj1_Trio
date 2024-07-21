@@ -4,9 +4,14 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
+import android.widget.Toast
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.database.DataSnapshot
+import com.google.firebase.database.DatabaseError
+import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
-//DO THE ACTION BAR
-//Do Edit Profile First
 //Cart needs a horizontal Scroll Veiw of the images and Titles of the first three products in the list
 //As does buying history, but worry abt those when we get to em
 //The pages for them themselves are just Recycler Veiw pages
@@ -15,7 +20,37 @@ class ProfileHome : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile_home)
+        var welcome=findViewById<TextView>(R.id.Welcome)
+        var email=findViewById<TextView>(R.id.Email)
+        var password=findViewById<TextView>(R.id.Passw)
+        var dob=findViewById<TextView>(R.id.DoB)
+        var addr=findViewById<TextView>(R.id.Addr)
+        var editprof=findViewById<Button>(R.id.EditProf)
+        var mAuth= FirebaseAuth.getInstance()
+        var database= FirebaseDatabase.getInstance()
+        var intent=Intent(this,EditProfile::class.java)
+        var myRef = database.getReference("users").child(mAuth.currentUser?.email.toString().split("@")[0])
+        myRef.addValueEventListener(object : ValueEventListener {
+            override fun onDataChange(dataSnapshot: DataSnapshot) {
+                val value = dataSnapshot.getValue(User::class.java)
+                intent.putExtra("Username", value?.Name)
+                intent.putExtra("Email", value?.Email)
+                intent.putExtra("Password", value?.Password)
+                intent.putExtra("Address",value?.Address)
+                intent.putExtra("DoB", value?.DoB)
+                welcome.setText(value?.Name + "'s Buyer Profile")
+                email.setText("Email: " + value?.Email)
+                password.setText("Password: " + value?.Password)
+                dob.setText("Date of Birth: " + value?.DoB)
+                addr.setText("Address: " + value?.Address)
+            }
+            override fun onCancelled(error: DatabaseError) {
+            }
+        })
 
+        editprof.setOnClickListener{
+            startActivity(intent)
+        }
 
 
 
