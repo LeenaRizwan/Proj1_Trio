@@ -6,11 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FFF8D6"
     android:orientation="vertical"
-    tools:context=".SearchHome">
-
-<!--    Hm. If search veiw implements search on the same activity, we have a problem
-Ah ha, i got it. Set it to start a new activity soon as we tap the search veiw.
-I'll fill in other things like the search history and etc myself-->
+    tools:context=".SearchRes">
 
     <ImageView
         android:layout_width="match_parent"
@@ -33,17 +29,24 @@ I'll fill in other things like the search history and etc myself-->
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Search Home"
+                android:text="Search Results"
                 android:textSize="25dp"
                 android:textStyle="bold"
                 android:textColor="#d19525"
                 android:layout_marginLeft="120dp"></TextView>
+            
+            <androidx.appcompat.widget.SearchView
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/searchv">
 
-            <SearchView
-                android:layout_width="250dp"
-                android:layout_marginLeft="70dp"
-                android:id="@+id/search"
-                android:layout_height="50dp"></SearchView>
+            </androidx.appcompat.widget.SearchView>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/recv">
+            </androidx.recyclerview.widget.RecyclerView>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
