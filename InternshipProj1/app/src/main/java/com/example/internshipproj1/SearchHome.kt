@@ -4,11 +4,16 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
+import android.widget.SearchView
 
 class SearchHome : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search_home)
+        var searchv=findViewById<SearchView>(R.id.search)
+        searchv.setOnClickListener{
+            startActivity(Intent(this,SearchRes::class.java))
+        }
 
         //ACTION BAR
         var home=findViewById<Button>(R.id.HomeButton)

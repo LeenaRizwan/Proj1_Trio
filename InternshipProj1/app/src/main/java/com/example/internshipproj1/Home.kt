@@ -19,7 +19,7 @@ class Home : AppCompatActivity() {
             startActivity(Intent(this,Home::class.java))
         }
         search.setOnClickListener{
-            startActivity(Intent(this,SearchHome::class.java))
+            startActivity(Intent(this,SearchRes::class.java))
         }
         cart.setOnClickListener{
             startActivity(Intent(this,CartHome::class.java))
