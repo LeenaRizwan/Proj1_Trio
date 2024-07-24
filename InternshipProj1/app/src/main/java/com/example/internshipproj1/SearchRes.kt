@@ -1,15 +1,14 @@
 package com.example.internshipproj1
 
 import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.SearchView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.DataSnapshot
 import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
@@ -28,6 +27,8 @@ lateinit var madapter: mAdapter
         rv.setHasFixedSize(true)
         itemList= ArrayList<Product>()
         fillList(itemList)
+
+
         searchv.setOnQueryTextListener(object: SearchView.OnQueryTextListener,
             androidx.appcompat.widget.SearchView.OnQueryTextListener {
             override fun onQueryTextSubmit(query:String?):Boolean{
@@ -38,17 +39,6 @@ lateinit var madapter: mAdapter
                 return true
             }
         })
-
-        //Okay, NOW we work with the recycler veiw and adapter.
-        // like chatjohn, make it pull from the whole list of items to initialise
-
-        //step1: Make the items list in the database--
-        //step2: Make the Kt DATA class--
-        //step3: row xml--
-        //step4: adapter--
-        //step5: recyclerveiw
-        //step6:search function in adapter? I think?
-
         //ACTION BAR
         var home=findViewById<Button>(R.id.HomeButton)
         var search=findViewById<Button>(R.id.SearchButton)
@@ -97,7 +87,7 @@ lateinit var madapter: mAdapter
                         val value = snap.getValue(Product::class.java)
                         itemList.add(value!!)
                     }
-                    madapter = mAdapter(itemList)
+                    madapter = mAdapter(itemList, this@SearchRes)
                     rv.adapter = madapter
                     rv.visibility = View.VISIBLE
                 }
