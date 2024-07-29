@@ -13,26 +13,20 @@ import com.google.firebase.database.DatabaseError
 import com.google.firebase.database.FirebaseDatabase
 import com.google.firebase.database.ValueEventListener
 
-class CartHome : AppCompatActivity() {
+class OrderHistory : AppCompatActivity() {
     lateinit var cartlist: ArrayList<CartItem>
     lateinit var cartrev:RecyclerView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_cart_home)
+        setContentView(R.layout.activity_order_history)
+
         cartrev=findViewById<RecyclerView>(R.id.cartrev)
-        cartrev.layoutManager=LinearLayoutManager(this)
+        cartrev.layoutManager= LinearLayoutManager(this)
         cartlist=ArrayList<CartItem>()
         //Okay so
         fillList(cartlist)
-        cartrev.adapter=mAdapter3(cartlist)
+        cartrev.adapter=mAdapter4(cartlist)
         cartrev.visibility = View.VISIBLE
-        var tocheckout=findViewById<Button>(R.id.ToCheckout)
-        tocheckout.setOnClickListener{
-            startActivity(Intent(this,Checkout::class.java))
-        }
-
-
-
         //ACTION BAR
         var home=findViewById<Button>(R.id.HomeButton)
         var search=findViewById<Button>(R.id.SearchButton)
@@ -51,11 +45,11 @@ class CartHome : AppCompatActivity() {
             startActivity(Intent(this,ProfileHome::class.java))
         }
     }
-//MAKE KOTLIN CLASS FOR CART
+
     private fun fillList(cartlist: java.util.ArrayList<CartItem>) {
         var Db= FirebaseDatabase.getInstance()
-        var mAuth=FirebaseAuth.getInstance()
-        var myRef = Db.getReference("Cart").child(mAuth.currentUser?.email.toString().split("@")[0])
+        var mAuth= FirebaseAuth.getInstance()
+        var myRef = Db.getReference("Order_History").child(mAuth.currentUser?.email.toString().split("@")[0])
         myRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 if (dataSnapshot.exists()) {
@@ -64,7 +58,7 @@ class CartHome : AppCompatActivity() {
                         val value = snap.getValue(CartItem::class.java)
                         cartlist.add(value!!)
                     }
-                    cartrev.adapter=mAdapter3(cartlist)
+                    cartrev.adapter=mAdapter4(cartlist)
                     cartrev.visibility = View.VISIBLE
                 }
 

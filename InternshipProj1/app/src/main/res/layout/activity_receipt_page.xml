@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8D6"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    tools:context=".ReceiptPage">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Receipt"
+        android:layout_marginStart="140dp"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#d19525"></TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="650dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TheBill"
+            android:textSize="16dp"
+            android:id="@+id/TheBill1"
+            android:textStyle="bold"
+            android:textColor="#d19525"
+            android:layout_marginLeft="20dp"></TextView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TheBill"
+            android:textSize="16dp"
+            android:id="@+id/TheBill2"
+            android:textStyle="bold"
+            android:textColor="#d19525"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"></TextView>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TheBill"
+        android:textSize="20dp"
+        android:id="@+id/TheTotal"
+        android:textStyle="bold"
+        android:textColor="#d19525"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"></TextView>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back to HomePage"
+        android:id="@+id/ToHome"></Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

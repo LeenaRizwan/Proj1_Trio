@@ -8,6 +8,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.core.content.ContextCompat.getContextForLanguage
@@ -40,7 +41,7 @@ class mAdapter(private var list:ArrayList<Product>, private var con:Context) : R
             val bitmap = BitmapFactory.decodeFile(localtemp.absolutePath)
             holder.Image.setImageBitmap(bitmap)
         }
-        holder.ProdButton.setOnClickListener{
+        holder.LL1.setOnClickListener{
             intentTime(prod)
         }
     }
@@ -57,6 +58,7 @@ class mAdapter(private var list:ArrayList<Product>, private var con:Context) : R
         intent.putExtra("Sold", prod.Sold)
         intent.putExtra("Stock", prod.Stock)
         intent.putExtra("Stars",prod.Stars)
+        intent.putExtra("ID",prod.ID)
         startActivity(con, intent, null)
         return intent
     }
@@ -70,6 +72,6 @@ class mAdapter(private var list:ArrayList<Product>, private var con:Context) : R
         var Name = itemView.findViewById<TextView>(R.id.Name)
         var Price=itemView.findViewById<TextView>(R.id.Price)
         var Image=itemView.findViewById<ImageView>(R.id.picture)
-        var ProdButton=itemView.findViewById<Button>(R.id.prodbutton)
+        var LL1=itemView.findViewById<androidx.appcompat.widget.LinearLayoutCompat>(R.id.row1)
     }
 }

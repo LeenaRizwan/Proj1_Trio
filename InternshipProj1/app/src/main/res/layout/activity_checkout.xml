@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF8D6"
+    android:orientation="vertical"
+    tools:context=".Checkout">
+
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/banner1"
+        android:scaleType="fitXY"></ImageView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/menu2"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Checkout"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#d19525"
+                android:layout_marginLeft="120dp"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16dp"
+                android:id="@+id/TheBill1"
+                android:textStyle="bold"
+                android:textColor="#d19525"
+                android:layout_marginLeft="20dp"></TextView>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="16dp"
+                    android:id="@+id/TheBill2"
+                    android:textStyle="bold"
+                    android:textColor="#d19525"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="20dp"></TextView>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="The Total"
+                android:textSize="20dp"
+                android:id="@+id/TheTotal"
+                android:textStyle="bold"
+                android:textColor="#d19525"
+                android:layout_marginLeft="120dp"></TextView>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Current Address: "
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#d19525"
+                    android:layout_marginLeft="20dp"></TextView>
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:id="@+id/Address"></EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+            <Switch
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#d19525"
+                android:id="@+id/OnlinePay"
+                android:text="Pay On Delivery"></Switch>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Online"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#d19525"
+                android:layout_marginLeft="20dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/LL3"
+                android:visibility="gone"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Credit Card Information: "
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:textColor="#d19525"
+                    android:layout_marginLeft="20dp"></TextView>
+                <EditText
+                    android:layout_width="150dp"
+                    android:layout_height="50dp"
+                    android:inputType="number"
+                    android:id="@+id/CredCard"></EditText>
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ErrorM"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#FF0000"
+                android:layout_marginLeft="20dp"></TextView>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ConfirmOrder"
+                android:text="Confirm"></Button>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <!--Action Bar-->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="130dp"
+        android:gravity="bottom"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/HomeButton"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/SearchButton"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/CartButton"></Button>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/ProfileButton"></Button>
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
