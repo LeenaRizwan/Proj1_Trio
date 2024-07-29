@@ -17,6 +17,10 @@ import com.google.firebase.database.ValueEventListener
 //The pages for them themselves are just Recycler Veiw pages
 //Make sure to add ClearAll and delete indiv buttons on the xml
 class ProfileHome : AppCompatActivity() {
+
+    //Okay so, to fill the neechay walay
+    //Ill need to pick Recc wala filllist code, fill OrderHist and Cart, up to three
+    //And then display them as in Recc, except ill make a function to fill the intent to make them clickable
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_profile_home)
@@ -26,6 +30,9 @@ class ProfileHome : AppCompatActivity() {
         var dob=findViewById<TextView>(R.id.DoB)
         var addr=findViewById<TextView>(R.id.Addr)
         var editprof=findViewById<Button>(R.id.EditProf)
+        var tosettings=findViewById<Button>(R.id.GoToSettings)
+        var gotocart=findViewById<Button>(R.id.GoToCart)
+        var gotohist=findViewById<Button>(R.id.GoToHist)
         var mAuth= FirebaseAuth.getInstance()
         var database= FirebaseDatabase.getInstance()
         var intent=Intent(this,EditProfile::class.java)
@@ -50,6 +57,15 @@ class ProfileHome : AppCompatActivity() {
 
         editprof.setOnClickListener{
             startActivity(intent)
+        }
+        gotocart.setOnClickListener{
+            startActivity(Intent(this, CartHome::class.java))
+        }
+        gotohist.setOnClickListener{
+            startActivity(Intent(this,OrderHistory::class.java))
+        }
+        tosettings.setOnClickListener{
+            startActivity(Intent(this,Settings::class.java))
         }
 
 

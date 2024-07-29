@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#D19525"
+    android:orientation="vertical"
+    tools:context=".Settings">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:id="@+id/backtoprof"
+            android:src="@drawable/backarrow"></ImageView>
+
+    <TextView
+        android:fontFamily="sans-serif-condensed-light"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textSize="25dp"
+        android:layout_marginLeft="60dp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:text="App Settings"></TextView>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <GridLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                android:columnCount="2">
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:textColor="#f7d56f"
+                        android:text="Record Order History"></TextView>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="170dp"
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:orientation="vertical"
+                    android:layout_margin="10dp"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="17dp"
+                        android:textColor="#f7d56f"
+                        android:text="PutASwitchHere"></TextView>
+                </LinearLayout>
+            </GridLayout>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Submit App Feedback"
+                android:layout_marginStart="100dp"
+                android:backgroundTint="#1C3748"
+                android:id="@+id/GoToFeedback"
+                android:textColor="#FFFFFF"></Button>
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Submit Refund Request"
+                android:layout_marginStart="100dp"
+                android:backgroundTint="#1C3748"
+                android:id="@+id/GoToRefund"
+                android:textColor="#FFFFFF"></Button>
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Delete Account"
+                android:layout_marginStart="100dp"
+                android:backgroundTint="#BB0000"
+                android:id="@+id/GoToDelete"
+                android:textColor="#FFFFFF"></Button>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

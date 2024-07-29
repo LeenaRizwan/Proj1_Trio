@@ -9,10 +9,11 @@ data class Product(
     var Price:Int,
     var Sale_Percent:Int,
     var Stars:Int,
+    var ID:Int,
     var Sold:Int,
     var Stock:Int
 ) {
-    constructor() : this("A", "B", "C", "D", "E", 0, 0, 0, 0,0) {
+    constructor() : this("A", "B", "C", "D", "E", 0, 0, 0, 0,0,0) {
 
     }
 }

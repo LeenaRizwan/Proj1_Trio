@@ -38,6 +38,7 @@
         android:id="@+id/rev"
         android:text="Default Reveiw"
         android:layout_marginLeft="10dp"
+        android:layout_marginBottom="5dp"
         android:textSize="15dp"
         android:textColor="#d19525"></TextView>
 
