@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#D19525"
     android:orientation="vertical"
-    tools:context=".Settings">
+    tools:context=".SubmitRefundReq">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,16 +20,16 @@
             android:id="@+id/backtoprof"
             android:src="@drawable/backarrow"></ImageView>
 
-    <TextView
-        android:fontFamily="sans-serif-condensed-light"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:textSize="25dp"
-        android:layout_marginLeft="60dp"
-        android:textStyle="bold"
-        android:textColor="#FFFFFF"
-        android:text="App Settings"></TextView>
+        <TextView
+            android:fontFamily="sans-serif-condensed-light"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="25dp"
+            android:layout_marginLeft="60dp"
+            android:textStyle="bold"
+            android:textColor="#FFFFFF"
+            android:text="Request Refund"></TextView>
 
     </LinearLayout>
 
@@ -57,8 +57,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:textSize="17dp"
-                        android:textColor="#f7d56f"
-                        android:text="Record Order History"></TextView>
+                        android:textColor="#FFFFFF"
+                        android:text="Submit Receipt Screenshot:"></TextView>
 
                 </LinearLayout>
 
@@ -69,37 +69,17 @@
                     android:layout_margin="10dp"
                     android:layout_height="match_parent">
 
-                    <Switch
-                        android:layout_width="wrap_content"
+                    <Button
+                        android:text="Submit Receipt"
+                        android:layout_width="200dp"
                         android:layout_height="wrap_content"
-                        android:id="@+id/RecOrderHist"></Switch>
+                        android:backgroundTint="#1C3748"
+                        android:textColor="#FFFFFF"
+                        android:id="@+id/Submitbutton">
+
+                    </Button>
                 </LinearLayout>
             </GridLayout>
-
-            <Button
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:text="Submit App Feedback"
-                android:layout_marginStart="100dp"
-                android:backgroundTint="#1C3748"
-                android:id="@+id/GoToFeedback"
-                android:textColor="#FFFFFF"></Button>
-            <Button
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:text="Submit Refund Request"
-                android:layout_marginStart="100dp"
-                android:backgroundTint="#1C3748"
-                android:id="@+id/GoToRefund"
-                android:textColor="#FFFFFF"></Button>
-            <Button
-                android:layout_width="200dp"
-                android:layout_height="wrap_content"
-                android:text="Delete Account"
-                android:layout_marginStart="100dp"
-                android:backgroundTint="#BB0000"
-                android:id="@+id/GoToDelete"
-                android:textColor="#FFFFFF"></Button>
 
         </LinearLayout>
 

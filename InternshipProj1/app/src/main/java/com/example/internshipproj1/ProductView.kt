@@ -42,6 +42,14 @@ class ProductView : AppCompatActivity() {
         prod.Sold = intent.getIntExtra("Sold", 0)
         prod.Stock = intent.getIntExtra("Stock", 0)
         prod.ID=intent.getIntExtra("ID",0)
+
+        var pageimage=findViewById<ImageView>(R.id.pageimage)
+        val storef = FirebaseStorage.getInstance().reference.child(prod.Name.lowercase() + "_image.png")
+        val localtemp = File.createTempFile("temp", "png")
+        storef.getFile(localtemp).addOnSuccessListener {
+            val bitmap = BitmapFactory.decodeFile(localtemp.absolutePath)
+            pageimage.setImageBitmap(bitmap)
+        }
         //FILLING REVEIWS RECYCLER VEIW
         rev = findViewById<RecyclerView>(R.id.rev)
         rev.layoutManager = LinearLayoutManager(this)

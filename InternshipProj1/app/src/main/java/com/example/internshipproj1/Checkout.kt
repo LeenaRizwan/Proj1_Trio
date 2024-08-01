@@ -1,5 +1,6 @@
 package com.example.internshipproj1
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -68,12 +69,16 @@ class Checkout : AppCompatActivity() {
             }
             else {
                 //Fill Into Order History!
-                myRef = FirebaseDatabase.getInstance().getReference("Order_History")
-                    .child(mAuth.currentUser?.email.toString().split("@")[0])
-                for( i in cartlist){
-                    myRef.child(i.ID.toString()).child("Name").setValue(i.Name)
-                    myRef.child(i.ID.toString()).child("Price").setValue(i.Price)
-                    myRef.child(i.ID.toString()).child("ID").setValue(i.ID)
+                val sharedPref = getPreferences(Context.MODE_PRIVATE)
+                val saveorder = sharedPref.getBoolean("SaveOrder", true)
+                if(saveorder==true) {
+                    myRef = FirebaseDatabase.getInstance().getReference("Order_History")
+                        .child(mAuth.currentUser?.email.toString().split("@")[0])
+                    for (i in cartlist) {
+                        myRef.child(i.ID.toString()).child("Name").setValue(i.Name)
+                        myRef.child(i.ID.toString()).child("Price").setValue(i.Price)
+                        myRef.child(i.ID.toString()).child("ID").setValue(i.ID)
+                    }
                 }
 
                 Toast.makeText(this, "Order Confirmed!", Toast.LENGTH_SHORT).show()

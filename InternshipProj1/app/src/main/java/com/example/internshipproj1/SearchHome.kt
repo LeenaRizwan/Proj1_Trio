@@ -10,10 +10,27 @@ class SearchHome : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_search_home)
-        var searchv=findViewById<SearchView>(R.id.search)
+        var gotofood=findViewById<Button>(R.id.GoToFood)
+        var gotohelth=findViewById<Button>(R.id.GoToHealth)
+        var gototech=findViewById<Button>(R.id.GoToTech)
+        var searchv=findViewById<androidx.appcompat.widget.SearchView>(R.id.search)
         searchv.setOnClickListener{
-            startActivity(Intent(this,SearchRes::class.java))
+            var intent=Intent(this, SearchRes::class.java).putExtra("SearchItem", "Null")
+            startActivity(intent)
         }
+        gototech.setOnClickListener{
+            var intent=Intent(this, SearchRes::class.java).putExtra("SearchItem", "Tech")
+            startActivity(intent)
+        }
+        gotohelth.setOnClickListener{
+            var intent=Intent(this, SearchRes::class.java).putExtra("SearchItem", "Health")
+            startActivity(intent)
+        }
+        gotofood.setOnClickListener{
+            var intent=Intent(this, SearchRes::class.java).putExtra("SearchItem", "Food")
+            startActivity(intent)
+        }
+
 
         //ACTION BAR
         var home=findViewById<Button>(R.id.HomeButton)

@@ -16,7 +16,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:background="@drawable/menu1"
+        android:layout_height="580dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -24,16 +25,481 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
-            android:background="@drawable/menu2"
             android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Home"
-                android:textSize="25dp"
+                android:textSize="30dp"
                 android:textStyle="bold"
-                android:textColor="#d19525"
-                android:layout_marginLeft="120dp"></TextView>
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="150dp"></TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hot Sales!"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"></TextView>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:id="@+id/LL1"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_height="80dp"
+                            android:layout_width="80dp"
+                            android:scaleType="fitXY"
+                            android:id="@+id/image1"
+                            android:src="@drawable/logo"></ImageView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/title1"
+                                android:layout_marginLeft="10dp"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/price1"
+                                android:layout_marginLeft="10dp"></TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/LL2"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_height="80dp"
+                            android:layout_width="80dp"
+                            android:scaleType="fitXY"
+                            android:id="@+id/image2"
+                            android:src="@drawable/logo"></ImageView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/title2"
+                                android:layout_marginLeft="10dp"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/price2"
+                                android:layout_marginLeft="10dp"></TextView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/LL3"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_height="80dp"
+                            android:layout_width="80dp"
+                            android:id="@+id/image3"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/logo"></ImageView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/title3"
+                                android:layout_marginLeft="10dp"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/price3"
+                                android:layout_marginLeft="10dp">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New Arrivals!"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"></TextView>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:id="@+id/LL4"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_height="80dp"
+                            android:layout_width="80dp"
+                            android:scaleType="fitXY"
+                            android:id="@+id/image4"
+                            android:src="@drawable/logo"></ImageView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/title4"
+                                android:layout_marginLeft="10dp"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/price4"
+                                android:layout_marginLeft="10dp"></TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/LL5"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_height="80dp"
+                            android:layout_width="80dp"
+                            android:scaleType="fitXY"
+                            android:id="@+id/image5"
+                            android:src="@drawable/logo"></ImageView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/title5"
+                                android:layout_marginLeft="10dp"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/price5"
+                                android:layout_marginLeft="10dp"></TextView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/LL6"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_height="80dp"
+                            android:layout_width="80dp"
+                            android:id="@+id/image6"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/logo"></ImageView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/title6"
+                                android:layout_marginLeft="10dp"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/price6"
+                                android:layout_marginLeft="10dp">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="You May Like:"
+                android:textSize="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="50dp"></TextView>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="100dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="80dp"
+                        android:id="@+id/LL7"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_height="80dp"
+                            android:layout_width="80dp"
+                            android:scaleType="fitXY"
+                            android:id="@+id/image7"
+                            android:src="@drawable/logo"></ImageView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/title7"
+                                android:layout_marginLeft="10dp"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/price7"
+                                android:layout_marginLeft="10dp"></TextView>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_marginTop="10dp"
+                        android:id="@+id/LL8"
+                        android:layout_marginLeft="15dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_height="80dp"
+                            android:layout_width="80dp"
+                            android:scaleType="fitXY"
+                            android:id="@+id/image8"
+                            android:src="@drawable/logo"></ImageView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/title8"
+                                android:layout_marginLeft="10dp"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/price8"
+                                android:layout_marginLeft="10dp"></TextView>
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="100dp"
+                        android:layout_marginLeft="15dp"
+                        android:id="@+id/LL9"
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_height="80dp"
+                            android:layout_width="80dp"
+                            android:id="@+id/image9"
+                            android:scaleType="fitXY"
+                            android:src="@drawable/logo"></ImageView>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="80dp"
+                            android:layout_marginTop="10dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textStyle="bold"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/title9"
+                                android:layout_marginLeft="10dp"></TextView>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Price Here"
+                                android:textSize="18dp"
+                                android:textColor="#FFFFFF"
+                                android:id="@+id/price9"
+                                android:layout_marginLeft="10dp">
+
+                            </TextView>
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </HorizontalScrollView>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -41,26 +507,42 @@
 
     <!--Action Bar-->
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="130dp"
-        android:gravity="bottom"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/homeicon"
             android:id="@+id/HomeButton"></Button>
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/SearchButton"></Button>
+            android:id="@+id/SearchButton"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/searchicon"></Button>
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/carticon"
             android:id="@+id/CartButton"></Button>
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/profileicon"
             android:id="@+id/ProfileButton"></Button>
 
     </LinearLayout>

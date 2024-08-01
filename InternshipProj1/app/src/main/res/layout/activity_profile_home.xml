@@ -17,7 +17,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="600dp">
+        android:background="@drawable/menu1"
+        android:layout_height="580dp">
 
     <androidx.appcompat.widget.LinearLayoutCompat
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -25,7 +26,6 @@
             android:layout_width="match_parent"
             android:layout_height="600dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/menu2"
             android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
@@ -34,7 +34,7 @@
                 android:id="@+id/Welcome"
                 android:textSize="25dp"
                 android:textStyle="bold"
-                android:textColor="#d19525"
+                android:textColor="#FFFFFF"
                 android:layout_marginLeft="100dp"></TextView>
 
             <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
@@ -50,7 +50,7 @@
                     android:textSize="20dp"
                     android:id="@+id/Email"
                     android:textStyle="bold"
-                    android:textColor="#d19525"
+                    android:textColor="#FFFFFF"
                     android:layout_marginLeft="40dp"></TextView>
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -68,7 +68,7 @@
             android:textSize="20dp"
             android:id="@+id/Passw"
             android:textStyle="bold"
-            android:textColor="#d19525"
+            android:textColor="#FFFFFF"
             android:layout_marginLeft="40dp"></TextView>
 
     </androidx.appcompat.widget.LinearLayoutCompat>
@@ -86,7 +86,7 @@
                     android:textSize="20dp"
                     android:id="@+id/DoB"
                     android:textStyle="bold"
-                    android:textColor="#d19525"
+                    android:textColor="#FFFFFF"
                     android:layout_marginLeft="40dp"></TextView>
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -103,7 +103,7 @@
                     android:textSize="20dp"
                     android:id="@+id/Addr"
                     android:textStyle="bold"
-                    android:textColor="#d19525"
+                    android:textColor="#FFFFFF"
                     android:layout_marginLeft="40dp"></TextView>
             </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -122,17 +122,9 @@
                 android:text="Cart: "
                 android:textSize="25dp"
                 android:textStyle="bold"
-                android:textColor="#d19525"
-                android:layout_marginTop="100dp"
-                android:layout_marginLeft="20dp"></TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:textColor="#e3c15b"
-                android:layout_marginLeft="50dp"
-                android:text="The cart is currently empty."></TextView>
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="50dp"></TextView>
 
                 <Button
                     android:layout_width="wrap_content"
@@ -151,17 +143,9 @@
                 android:text="Purchase History: "
                 android:textSize="25dp"
                 android:textStyle="bold"
-                android:layout_marginTop="100dp"
-                android:textColor="#d19525"
-                android:layout_marginLeft="20dp"></TextView>
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:textSize="15dp"
-                android:textStyle="bold"
-                android:textColor="#e3c15b"
-                android:layout_marginLeft="50dp"
-                android:text="This list is currently empty."></TextView>
+                android:layout_marginTop="20dp"
+                android:textColor="#FFFFFF"
+                android:layout_marginLeft="50dp"></TextView>
 
             <Button
                 android:layout_width="wrap_content"
@@ -188,30 +172,46 @@
 
     </ScrollView>
 
-<!--Action Bar-->
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="50dp"
-    android:gravity="bottom"
-    android:orientation="horizontal">
-    
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/HomeButton"></Button>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/SearchButton"></Button>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/CartButton"></Button>
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/ProfileButton"></Button>
-    
-</LinearLayout>
+    <!--Action Bar-->
+    <LinearLayout
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/homeicon"
+            android:id="@+id/HomeButton"></Button>
+
+        <Button
+            android:id="@+id/SearchButton"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/searchicon"></Button>
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/carticon"
+            android:id="@+id/CartButton"></Button>
+        <Button
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/profileicon"
+            android:id="@+id/ProfileButton"></Button>
+
+    </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

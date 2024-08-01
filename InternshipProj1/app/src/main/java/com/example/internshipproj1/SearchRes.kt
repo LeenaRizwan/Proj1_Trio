@@ -79,13 +79,15 @@ lateinit var madapter: mAdapter
 
     private fun fillList(itemList: ArrayList<Product>) {
         var Db= FirebaseDatabase.getInstance()
+        var s=intent.getStringExtra("SearchItem")
         var myRef = Db.getReference("Products")
         myRef.addValueEventListener(object : ValueEventListener {
             override fun onDataChange(dataSnapshot: DataSnapshot) {
                 if (dataSnapshot.exists()) {
                     for (snap in dataSnapshot.children) {
                         val value = snap.getValue(Product::class.java)
-                        itemList.add(value!!)
+                        if((s=="Null")||(s==value?.Catagory1)||(s== value?.Catagory2)){
+                        itemList.add(value!!)}
                     }
                     madapter = mAdapter(itemList, this@SearchRes)
                     rv.adapter = madapter

@@ -66,12 +66,14 @@
                         android:layout_height="wrap_content"
                         android:text="Back to Login"
                         android:backgroundTint="#1c3748"
+                        android:textColor="#FFFFFF"
                         android:id="@+id/log"
                         android:layout_marginLeft="70dp"></Button>
                     <Button
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Send The Link"
+                        android:textColor="#FFFFFF"
                         android:backgroundTint="#1c3748"
                         android:layout_marginLeft="10dp"
                         android:id="@+id/sendagain"></Button>

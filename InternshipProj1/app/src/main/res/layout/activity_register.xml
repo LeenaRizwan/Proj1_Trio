@@ -89,6 +89,7 @@
             <EditText
                 android:layout_width="150dp"
                 android:id="@+id/Password"
+                android:inputType="textPassword"
                 android:layout_height="wrap_content"></EditText>
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -143,6 +144,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Register!"
+            android:textColor="#FFFFFF"
             android:layout_marginTop="10dp"
             android:backgroundTint="#1c3748"
             android:id="@+id/Reg"

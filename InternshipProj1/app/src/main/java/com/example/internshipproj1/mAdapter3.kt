@@ -72,6 +72,6 @@ class mAdapter3(private var list:ArrayList<CartItem>) :RecyclerView.Adapter<mAda
         var Name = itemView.findViewById<TextView>(R.id.Name)
         var Price = itemView.findViewById<TextView>(R.id.Price)
         var Image=itemView.findViewById<ImageView>(R.id.picture)
-        var Cancel=itemView.findViewById<Button>(R.id.cancel)
+        var Cancel=itemView.findViewById<ImageView>(R.id.cancel)
     }
 }

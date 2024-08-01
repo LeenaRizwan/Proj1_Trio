@@ -5,31 +5,24 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF8D6"
+    android:background="#D19525"
     android:orientation="vertical"
     tools:context=".ProductView">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:src="@drawable/banner1"
-        android:scaleType="fitXY"></ImageView>
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="550dp">
+        android:layout_height="680dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             xmlns:android="http://schemas.android.com/apk/res/android"
             xmlns:tools="http://schemas.android.com/tools"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/menu2"
             android:orientation="vertical">
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
+                android:layout_margin="40dp"
                 android:id="@+id/pageimage"></ImageView>
             <LinearLayout
                 android:layout_width="match_parent"
@@ -41,15 +34,16 @@
                 android:text="Title Here"
                 android:textSize="25dp"
                 android:textStyle="bold"
-                android:textColor="#d19525"
+                android:textColor="#FFFFFF"
                 android:id="@+id/titlehere"
                 android:layout_marginLeft="10dp"></TextView>
 
                 <Button
-                    android:layout_width="50dp"
-                    android:layout_height="50dp"
-                    android:layout_marginEnd="20dp"
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:text="Add To Cart"
                     android:layout_marginStart="10dp"
+                    android:backgroundTint="#1C3748"
                     android:id="@+id/tocart"></Button>
             </LinearLayout>
 
@@ -59,7 +53,6 @@
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:layout_marginTop="10dp"
-            android:background="@drawable/menu2"
             android:orientation="horizontal">
 
             <TextView
@@ -68,7 +61,7 @@
                 android:text="Price Here"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:textColor="#d19525"
+                android:textColor="#FFFFFF"
                 android:id="@+id/pricehere"
                 android:layout_marginLeft="10dp"></TextView>
             <TextView
@@ -77,7 +70,7 @@
                 android:text="Stars Here"
                 android:textSize="20dp"
                 android:textStyle="bold"
-                android:textColor="#d19525"
+                android:textColor="#FFFFFF"
                 android:layout_marginStart="120dp"
                 android:id="@+id/starshere"
                 android:layout_marginLeft="10dp"></TextView>
@@ -89,7 +82,7 @@
                 android:layout_height="wrap_content"
                 android:text="Description:"
                 android:textSize="16dp"
-                android:textColor="#d19525"
+                android:textColor="#FFFFFF"
                 android:id="@+id/deschere"
                 android:layout_marginLeft="10dp"></TextView>
 
@@ -100,12 +93,13 @@
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:layout_marginTop="20dp"
-                android:textColor="#d19525"
+                android:textColor="#FFFFFF"
                 android:layout_marginLeft="10dp"></TextView>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:layout_margin="20dp"
                 android:id="@+id/rev"
                 ></androidx.recyclerview.widget.RecyclerView>
 
@@ -116,7 +110,7 @@
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:layout_marginTop="20dp"
-                android:textColor="#d19525"
+                android:textColor="#FFFFFF"
                 android:layout_marginLeft="10dp"></TextView>
 
             <TextView
@@ -139,7 +133,7 @@
                 android:text="Stars (out of 5):"
                 android:textSize="18dp"
                 android:textStyle="bold"
-                android:textColor="#d19525"
+                android:textColor="#FFFFFF"
                 android:layout_marginLeft="10dp"></TextView>
                 <EditText
                     android:layout_width="150dp"
@@ -156,7 +150,7 @@
                     android:text="Reveiw:"
                     android:textSize="18dp"
                     android:textStyle="bold"
-                    android:textColor="#d19525"
+                    android:textColor="#FFFFFF"
                     android:layout_marginLeft="10dp"></TextView>
                 <EditText
                     android:layout_width="150dp"
@@ -176,7 +170,7 @@
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:layout_marginTop="20dp"
-                android:textColor="#d19525"
+                android:textColor="#FFFFFF"
                 android:layout_marginLeft="10dp"></TextView>
 
             <HorizontalScrollView
@@ -216,7 +210,7 @@
                             android:text="Price Here"
                             android:textSize="18dp"
                             android:textStyle="bold"
-                            android:textColor="#d19525"
+                            android:textColor="#FFFFFF"
                             android:id="@+id/title1"
                             android:layout_marginLeft="10dp"></TextView>
 
@@ -225,7 +219,7 @@
                             android:layout_height="wrap_content"
                             android:text="Price Here"
                             android:textSize="18dp"
-                            android:textColor="#d19525"
+                            android:textColor="#FFFFFF"
                             android:id="@+id/price1"
                             android:layout_marginLeft="10dp"></TextView>
                     </LinearLayout>
@@ -260,7 +254,7 @@
                                 android:text="Price Here"
                                 android:textSize="18dp"
                                 android:textStyle="bold"
-                                android:textColor="#d19525"
+                                android:textColor="#FFFFFF"
                                 android:id="@+id/title2"
                                 android:layout_marginLeft="10dp"></TextView>
 
@@ -269,7 +263,7 @@
                                 android:layout_height="wrap_content"
                                 android:text="Price Here"
                                 android:textSize="18dp"
-                                android:textColor="#d19525"
+                                android:textColor="#FFFFFF"
                                 android:id="@+id/price2"
                                 android:layout_marginLeft="10dp"></TextView>
 
@@ -304,7 +298,7 @@
                                 android:text="Price Here"
                                 android:textSize="18dp"
                                 android:textStyle="bold"
-                                android:textColor="#d19525"
+                                android:textColor="#FFFFFF"
                                 android:id="@+id/title3"
                                 android:layout_marginLeft="10dp"></TextView>
 
@@ -313,9 +307,11 @@
                                 android:layout_height="wrap_content"
                                 android:text="Price Here"
                                 android:textSize="18dp"
-                                android:textColor="#d19525"
+                                android:textColor="#FFFFFF"
                                 android:id="@+id/price3"
-                                android:layout_marginLeft="10dp"></TextView>
+                                android:layout_marginLeft="10dp">
+
+                            </TextView>
 
                         </LinearLayout>
 
@@ -331,28 +327,43 @@
 
     <!--Action Bar-->
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="100dp"
-        android:gravity="bottom"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/homeicon"
             android:id="@+id/HomeButton"></Button>
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/SearchButton"></Button>
+            android:id="@+id/SearchButton"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/searchicon"></Button>
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/carticon"
             android:id="@+id/CartButton"></Button>
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/profileicon"
             android:id="@+id/ProfileButton"></Button>
 
     </LinearLayout>
-
 </androidx.appcompat.widget.LinearLayoutCompat>
