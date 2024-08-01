@@ -8,10 +8,6 @@
     android:orientation="vertical"
     tools:context=".SearchHome">
 
-<!--    Hm. If search veiw implements search on the same activity, we have a problem
-Ah ha, i got it. Set it to start a new activity soon as we tap the search veiw.
-I'll fill in other things like the search history and etc myself-->
-
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="80dp"
@@ -20,7 +16,8 @@ I'll fill in other things like the search history and etc myself-->
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:background="@drawable/menu1"
+        android:layout_height="580dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -28,7 +25,6 @@ I'll fill in other things like the search history and etc myself-->
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
-            android:background="@drawable/menu2"
             android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
@@ -36,14 +32,64 @@ I'll fill in other things like the search history and etc myself-->
                 android:text="Search Home"
                 android:textSize="25dp"
                 android:textStyle="bold"
-                android:textColor="#d19525"
+                android:textColor="#FFFFFF"
                 android:layout_marginLeft="120dp"></TextView>
 
-            <SearchView
+            <androidx.appcompat.widget.SearchView
                 android:layout_width="250dp"
                 android:layout_marginLeft="70dp"
-                android:id="@+id/search"
-                android:layout_height="50dp"></SearchView>
+                android:layout_height="wrap_content"
+                android:id="@+id/search">
+
+            </androidx.appcompat.widget.SearchView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Catagories:"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"></TextView>
+
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Technology"
+                android:backgroundTint="#C18515"
+                android:id="@+id/GoToTech"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="30dp"
+                android:textColor="#FFFFFF"></Button>
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Health"
+                android:layout_marginLeft="30dp"
+                android:backgroundTint="#C18515"
+                android:id="@+id/GoToHealth"
+                android:layout_marginTop="10dp"
+                android:textColor="#FFFFFF"></Button>
+            <Button
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:layout_marginLeft="30dp"
+                android:backgroundTint="#C18515"
+                android:layout_marginTop="10dp"
+                android:id="@+id/GoToFood"
+                android:textColor="#FFFFFF"></Button>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=". . . And much, much more!"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"></TextView>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
@@ -51,26 +97,42 @@ I'll fill in other things like the search history and etc myself-->
 
     <!--Action Bar-->
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="130dp"
-        android:gravity="bottom"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/homeicon"
             android:id="@+id/HomeButton"></Button>
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/SearchButton"></Button>
+            android:id="@+id/SearchButton"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/searchicon"></Button>
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/carticon"
             android:id="@+id/CartButton"></Button>
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/profileicon"
             android:id="@+id/ProfileButton"></Button>
 
     </LinearLayout>

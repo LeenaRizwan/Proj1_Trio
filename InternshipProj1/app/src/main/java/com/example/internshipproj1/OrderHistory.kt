@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.ImageView
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.google.firebase.auth.FirebaseAuth
@@ -19,7 +20,10 @@ class OrderHistory : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_order_history)
-
+        var backarrow=findViewById<ImageView>(R.id.backtoset)
+        backarrow.setOnClickListener{
+            startActivity(Intent(this, ProfileHome::class.java))
+        }
         cartrev=findViewById<RecyclerView>(R.id.cartrev)
         cartrev.layoutManager= LinearLayoutManager(this)
         cartlist=ArrayList<CartItem>()
@@ -27,23 +31,7 @@ class OrderHistory : AppCompatActivity() {
         fillList(cartlist)
         cartrev.adapter=mAdapter4(cartlist)
         cartrev.visibility = View.VISIBLE
-        //ACTION BAR
-        var home=findViewById<Button>(R.id.HomeButton)
-        var search=findViewById<Button>(R.id.SearchButton)
-        var cart=findViewById<Button>(R.id.CartButton)
-        var prof=findViewById<Button>(R.id.ProfileButton)
-        home.setOnClickListener{
-            startActivity(Intent(this,Home::class.java))
-        }
-        search.setOnClickListener{
-            startActivity(Intent(this,SearchHome::class.java))
-        }
-        cart.setOnClickListener{
-            startActivity(Intent(this,CartHome::class.java))
-        }
-        prof.setOnClickListener{
-            startActivity(Intent(this,ProfileHome::class.java))
-        }
+
     }
 
     private fun fillList(cartlist: java.util.ArrayList<CartItem>) {

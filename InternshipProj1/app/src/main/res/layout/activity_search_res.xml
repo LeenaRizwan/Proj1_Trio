@@ -16,7 +16,8 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:background="@drawable/menu1"
+        android:layout_height="580dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -24,7 +25,6 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
-            android:background="@drawable/menu2"
             android:orientation="vertical">
             <TextView
                 android:layout_width="wrap_content"
@@ -32,11 +32,12 @@
                 android:text="Search Results"
                 android:textSize="25dp"
                 android:textStyle="bold"
-                android:textColor="#d19525"
+                android:textColor="#FFFFFF"
                 android:layout_marginLeft="120dp"></TextView>
             
             <androidx.appcompat.widget.SearchView
-                android:layout_width="200dp"
+                android:layout_width="250dp"
+                android:layout_marginLeft="70dp"
                 android:layout_height="wrap_content"
                 android:id="@+id/searchv">
 
@@ -45,6 +46,7 @@
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginLeft="40dp"
                 android:id="@+id/recv">
             </androidx.recyclerview.widget.RecyclerView>
 
@@ -54,26 +56,42 @@
 
     <!--Action Bar-->
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="130dp"
-        android:gravity="bottom"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
         android:orientation="horizontal">
 
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="50dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/homeicon"
             android:id="@+id/HomeButton"></Button>
+
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/SearchButton"></Button>
+            android:id="@+id/SearchButton"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/searchicon"></Button>
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/carticon"
             android:id="@+id/CartButton"></Button>
         <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="5dp"
+            android:backgroundTint="#D19525"
+            android:foreground="@drawable/profileicon"
             android:id="@+id/ProfileButton"></Button>
 
     </LinearLayout>

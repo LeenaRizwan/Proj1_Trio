@@ -5,15 +5,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF8D6"
+    android:background="#D19525"
     android:orientation="vertical"
     tools:context=".EditProfile">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:src="@drawable/banner1"
-        android:scaleType="fitXY"></ImageView>
 
     <ScrollView
         android:layout_width="match_parent"
@@ -25,16 +20,28 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
-            android:background="@drawable/menu2"
             android:orientation="vertical">
-            <TextView
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/backtoset"
+                    android:src="@drawable/backarrow"></ImageView>
+
+                <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Edit Profile Information"
                 android:textSize="25dp"
                 android:textStyle="bold"
-                android:textColor="#d19525"
-                android:layout_marginLeft="100dp"></TextView>
+                android:textColor="#FFFFFF"
+                android:layout_margin="15dp"></TextView>
+
+            </LinearLayout>
 
             <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:tools="http://schemas.android.com/tools"
@@ -48,7 +55,7 @@
                     android:text="Name:           "
                     android:textSize="20dp"
                     android:textStyle="bold"
-                    android:textColor="#d19525"
+                    android:textColor="#FFFFFF"
                     android:layout_marginLeft="80dp"></TextView>
                 <EditText
                     android:layout_width="150dp"
@@ -69,7 +76,7 @@
                     android:text="Email:            "
                     android:textSize="20dp"
                     android:textStyle="bold"
-                    android:textColor="#d19525"
+                    android:textColor="#FFFFFF"
                     android:layout_marginLeft="80dp"></TextView>
                 <EditText
                     android:layout_width="150dp"
@@ -90,7 +97,7 @@
                     android:text="Password:    "
                     android:textSize="20dp"
                     android:textStyle="bold"
-                    android:textColor="#d19525"
+                    android:textColor="#FFFFFF"
                     android:layout_marginLeft="80dp"></TextView>
                 <EditText
                     android:layout_width="150dp"
@@ -110,7 +117,7 @@
                     android:text="Address:         "
                     android:textSize="20dp"
                     android:textStyle="bold"
-                    android:textColor="#d19525"
+                    android:textColor="#FFFFFF"
                     android:layout_marginLeft="80dp"></TextView>
                 <EditText
                     android:layout_width="150dp"
@@ -125,9 +132,11 @@
                 android:layout_marginTop="20dp"
                 android:orientation="horizontal">
             <Button
-                android:layout_width="wrap_content"
+                android:layout_width="200dp"
                 android:layout_height="wrap_content"
-                android:text="Edit Information"
+                android:text="Save New Information"
+                android:layout_marginStart="100dp"
+                android:backgroundTint="#1C3748"
                 android:id="@+id/Editinfo"
                 android:layout_gravity="end"></Button>
 
@@ -136,31 +145,5 @@
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </ScrollView>
-
-    <!--Action Bar-->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="130dp"
-        android:gravity="bottom"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/HomeButton"></Button>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/SearchButton"></Button>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/CartButton"></Button>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/ProfileButton"></Button>
-
-    </LinearLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

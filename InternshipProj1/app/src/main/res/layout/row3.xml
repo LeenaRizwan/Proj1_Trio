@@ -4,17 +4,18 @@
     android:orientation="horizontal"
     android:background="#FFF8D6"
     android:id="@+id/row3"
-    android:layout_height="50dp">
+    android:layout_margin="10dp"
+    android:layout_height="70dp">
 
     <ImageView
         android:layout_width="50dp"
         android:layout_height="50dp"
+        android:layout_margin="5dp"
         android:id="@+id/picture"></ImageView>
 
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="5dp"
+        android:layout_margin="10dp"
         android:orientation="vertical"
         android:layout_height="wrap_content">
         <TextView
@@ -33,9 +34,13 @@
             android:textSize="15dp"
             android:textColor="#d19525"></TextView>
     </LinearLayout>
-        <Button
-            android:layout_width="60dp"
-            android:layout_height="50dp"
-            android:id="@+id/cancel"></Button>
+
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="fitXY"
+        android:layout_margin="05dp"
+        android:foreground="@android:drawable/ic_delete"></ImageView>
 
 </androidx.appcompat.widget.LinearLayoutCompat>

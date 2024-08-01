@@ -35,18 +35,18 @@
             android:textColor="#FFFFFF"
             android:textStyle="bold"
             android:fontFamily="sans-serif-condensed-light"
-            android:text="Lorem ipsum dolor sit omet, consecutor elit."></TextView>
+            android:text="Trio: Shopping In Bunches!"></TextView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="17dp"
                     android:textColor="#f7d56f"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. Duis a arcu convallis, gravida purus eget, mollis diam."></TextView>
+                    android:text="Trio is a wholesale shopping application, providing users lower prices, and even sales (by the seller's own disgression) than any other e-commerce application! Furthermore, this application caters to retailers who wish to order goods for their own brick-and-mortar businesses, thereby providing convinience and competitive prices for everyone-from home businesses to corporations!"></TextView>
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="150dp"
-                android:src="@drawable/menu1"
+                android:src="@drawable/infopage"
                 android:scaleType="fitXY"></ImageView>
 
                 <TextView
@@ -56,14 +56,14 @@
                     android:textColor="#FFFFFF"
                     android:textStyle="bold"
                     android:fontFamily="sans-serif-condensed-light"
-                    android:text="Lorem ipsum dolor sit omet, consecutor elit."></TextView>
+                    android:text="Why shop with Trio?"></TextView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="17dp"
                     android:textColor="#f7d56f"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra. Duis a arcu convallis, gravida purus eget, mollis diam."></TextView>
+                    android:text="Trio not only promises quality and sfety of the user's goods upon arrival, but we also offer a no-questions-asked money back refund garuntee! A registered user may submit a screenshot of their receipt (which will be available to them after CHeckout) and within 48 hours, our team will response with a voucher for the lost capital. (Terms and Conditions apply)"></TextView>
 
 
 
@@ -81,20 +81,19 @@
                 android:textSize="20dp"
                 android:textColor="#FFFFFF"
                 android:textStyle="bold"
-                android:maxLines="1"
-                android:text="Lorem ipsum "></TextView>
+                android:text="Trio: International!"></TextView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="17dp"
                     android:textColor="#f7d56f"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra."></TextView>
+                    android:text="Trio has gone international! We are now allowing international shipping, along with booting up servers in South India, Siri Lanka, and Bangladesh! Trio The Duck Is Sailing Across South Asia, with hopes to expand soon!"></TextView>
 
                 <ImageView
                     android:layout_width="match_parent"
                     android:layout_height="100dp"
-                    android:src="@drawable/apple_image"
+                    android:src="@drawable/infopage2"
                     android:layout_margin="5dp"
                     android:scaleType="fitXY"></ImageView>
 
@@ -105,14 +104,14 @@
                     android:layout_margin="10dp"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold"
-                    android:text="Dolor Sit Amet"></TextView>
+                    android:text="New Catagories!"></TextView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="17dp"
                     android:textColor="#f7d56f"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra."></TextView>
+                    android:text="The long-awaited Technology catagory has finally been added into Trio! Having secured sponsors and providers to hand-select and curate the devices we will offer on the platform ourselves, it is with great excitement that we announce this partnership!"></TextView>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -120,14 +119,14 @@
                     android:layout_margin="10dp"
                     android:textColor="#FFFFFF"
                     android:textStyle="bold"
-                    android:text="Consectetur Adipiscing elit"></TextView>
+                    android:text="Partnership with Samsung!"></TextView>
 
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:textSize="17dp"
                     android:textColor="#f7d56f"
-                    android:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel egestas dolor, nec dignissim metus. Donec augue elit, rhoncus ac sodales id, porttitor vitae est. Donec laoreet rutrum libero sed pharetra.Lorem ipsum dolor sit amet, consectetur adipiscing elit."></TextView>
+                    android:text="Samsung and Trio will be releasing original sales for the newest samsung smartphones, tablets and Home Appliances right here! Thank you, Samsung!"></TextView>
 
             </LinearLayout>
         </GridLayout>

@@ -4,19 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#FFF8D6"
+    android:background="#D19525"
     android:orientation="vertical"
     tools:context=".OrderHistory">
 
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="80dp"
-        android:src="@drawable/banner1"
-        android:scaleType="fitXY"></ImageView>
-
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="600dp">
 
         <androidx.appcompat.widget.LinearLayoutCompat
             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -24,51 +18,40 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginTop="20dp"
-            android:background="@drawable/menu2"
             android:orientation="vertical">
-            <TextView
-                android:layout_width="wrap_content"
+            <LinearLayout
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Order History"
-                android:textSize="25dp"
-                android:textStyle="bold"
-                android:textColor="#d19525"
-                android:layout_marginLeft="120dp"></TextView>
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:scaleType="fitXY"
+                    android:id="@+id/backtoset"
+                    android:src="@drawable/backarrow"></ImageView>
+
+                <TextView
+                    android:fontFamily="sans-serif-condensed-light"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:textSize="25dp"
+                    android:layout_marginLeft="60dp"
+                    android:textStyle="bold"
+                    android:textColor="#FFFFFF"
+                    android:text="Order History"></TextView>
+
+            </LinearLayout>
 
             <androidx.recyclerview.widget.RecyclerView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
+                android:layout_margin="15dp"
                 android:id="@+id/cartrev"></androidx.recyclerview.widget.RecyclerView>
 
         </androidx.appcompat.widget.LinearLayoutCompat>
 
     </ScrollView>
-
-
-    <!--Action Bar-->
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="130dp"
-        android:gravity="bottom"
-        android:orientation="horizontal">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/HomeButton"></Button>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/SearchButton"></Button>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/CartButton"></Button>
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/ProfileButton"></Button>
-
-    </LinearLayout>
 
 </android.widget.LinearLayout>
